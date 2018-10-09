@@ -127,13 +127,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    "/Users/EDE/Desktop/blog/static",
-    "/Users/EDE/Desktop/blog/static/css",
-    "/Users/EDE/Desktop/blog/static/js ",
-    ]
-STATIC_ROOT = '/Users/EDE/Desktop/blog/static'
+    '/var/www/static/',
+]
+
+STATIC_ROOT = "/var/www/static/"
 
 # TEMPLATE_DIRS = (
 #     os.path.join(BASE_DIR, 'templates'),
