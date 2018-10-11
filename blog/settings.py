@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
-STATIC_ROOT = "/var/www/static/"
+STATIC_ROOT = "/var/www/asset/"
 
 # TEMPLATE_DIRS = (
 #     os.path.join(BASE_DIR, 'templates'),
@@ -143,7 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor"
+CKEDITOR_BASEPATH = "/asset/ckeditor/ckeditor"
 
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
 
