@@ -31,7 +31,7 @@ urlpatterns = [
 
     url(r'^accounts/', include('accounts.urls')),
 
-    url(r'^about/', about_view, name='about'),
+    url(r'^abouts/', about_view, name='about'),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
