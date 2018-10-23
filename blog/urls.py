@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from home.views import home_view
+from about.views import about_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -30,7 +31,7 @@ urlpatterns = [
 
     url(r'^accounts/', include('accounts.urls')),
 
-    url(r'^about/', include('about.urls'))
+    url(r'^about/', about_view, name='about')
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
