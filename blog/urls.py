@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from home.views import home_view
-from about.views import about_view
+from home.views import about_view
 from django.conf import settings
 from django.conf.urls.static import static
 
