@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .model import AddLink
+from .models import AddLink
 
 
 def home_view(request):
