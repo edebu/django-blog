@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import AddLink
 
-# Register your models here.
+
+class AddLinkAdmin(models.ModelAdmin):
+	list_display = ['link']
+	admin.site.register(AddLink, AddLinkAdmin)
