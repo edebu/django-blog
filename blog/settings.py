@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Kendi Uygulamalarım
     'post',
+    'home',
     # 3. Parti Uygulamalar
     'crispy_forms',
     'django_cleanup',
