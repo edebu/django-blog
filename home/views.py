@@ -5,9 +5,11 @@ from .models import AddLink
 def home_view(request):
     if request.user.is_authenticated():
         link = AddLink(request.POST or None)
+        links = AddLink.objects.all()
         context = {
             'isim': 'Barış',
             'link': link,
+            'links':links,
         }
         
 
