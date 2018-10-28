@@ -13,20 +13,20 @@ def home_view(request):
             'links':links,
 
         }
-        linkdic{
+        linkdic = {
             'src':listlink[1],
             'height':listlink[3],
             'widht':listlink[5],
             'frameborder':listlink[7],
             'allowfullscreen':listlink[9],
         }
-        
+        context['link'] = linkdic
 
     else:
         context = {
             'isim': 'Misafir Kullanıcı'
         }
-    return render(request, 'home.html', context, linkdic )
+    return render(request, 'home.html', context )
 
 
 def about_view(request):
